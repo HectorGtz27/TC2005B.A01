@@ -29,7 +29,7 @@
 }
 
 .chart-header {
-  background-image: url("/images/line-chart.png");
+  background-image: url("../images/line-chart.png");
   background-size: cover;
   background-position: center;
   background-color: #ccc; /* Fallback color if the image doesn't load */
@@ -47,7 +47,7 @@
 }
 
 .chart-header3 {
-  background-image: url("/images/funnel-chart.png");
+  background-image: url("images/funnel-chart.png");
   background-size: cover;
   background-position: center;
   background-color: #ccc; /* Fallback color if the image doesn't load */
@@ -56,7 +56,7 @@
 }
 
 .chart-header4 {
-  background-image: url("/images/pie-chart.svg");
+  background-image: url("./images/pie-chart.svg");
   background-size: cover;
   background-position: center;
   height: 280px;
@@ -64,7 +64,7 @@
 }
 
 .chart-header5 {
-  background-image: url("/images/Bar-Chart-Vertical.png");
+  background-image: url("/images/bar-chart.png");
   background-size: cover;
   background-position: center;
   height: 280px;
