@@ -1,0 +1,123 @@
+.left-section {
+  width: 54%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-section {
+  width: 46%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 80px;
+
+  position: fixed;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.right-section a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------------------SEARCH BAR--------------- */
+/* Container for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 6px; /* Less rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 33px; /*  IN HERE YOU CHANGE THE HEIGHT */
+  border: solid 1px #cccccc; /* Light border */
+  overflow: hidden; /* Ensures the inner elements don't overflow the rounded corners */
+  margin-right: 20px; /* Add some right margin */
+}
+
+/* Style for the search input */
+.search-box {
+  flex: 1; /* Take up the remaining space */
+  padding: 10px 16px;
+  border: none; /* No border */
+  outline: none; /* No outline */
+  font-size: 14px; /* Font size */
+  flex-grow: 1; /* The search box will grow to fill the available space */
+  /* Control the full width behavior */
+  box-sizing: border-box; /* This makes sure padding doesn't affect the total width */
+
+  width: 120px; /* IN HERE YOU CHANGE THE WIDTH */
+}
+
+.search-box::placeholder {
+  font-size: 12px;
+}
+
+/* Style for the search button */
+.search-bar button {
+  padding: 10px 20px; /* Padding to match the input */
+  background-color: #ffffff; /* Same as the input background */
+  border: none; /* No border */
+  outline: none; /* No outline */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Use flex to center content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding-right: 6px;
+}
+
+/* Style for the search icon */
+.search-bar i.fa {
+  color: #333333; /* Icon color */
+}
+
+/* Focus styles for the search input */
+.search-box:focus {
+  box-shadow: 0 0 0 2px #aaaaaa; /* Subtle focus ring */
+}
+
+/* Hover styles for the search button */
+.search-bar button:hover {
+  background-color: #f2f2f2; /* Light grey background on hover */
+}
+
+/* Assuming you are using Font Awesome 4 */
+.search-bar i.fa {
+  font-size: 1rem; /* Adjust icon size as needed */
+  color: gray;
+}

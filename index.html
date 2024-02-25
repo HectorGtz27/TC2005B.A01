@@ -11,7 +11,12 @@
     />
     <meta name="author" content="Author's name" />
     <title>Recruitment Dashboard</title>
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/Dashboard/header.css" />
+    <link rel="stylesheet" href="/styles/Dashboard/general.css" />
+    <link rel="stylesheet" href="/styles/Dashboard/hero.css" />
+    <link rel="stylesheet" href="/styles/Dashboard/key-metrics.css" />
+    <link rel="stylesheet" href="/styles/Dashboard/candidate.css" />
+    <link rel="stylesheet" href="/styles/Dashboard/footer.css" />
     <link
       rel="icon"
       href="/images/favicon.ico"
@@ -22,158 +27,165 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo.png" alt="logo Dashboard" />
-        <h2>Recruitment Dashboard</h2>
-      </div>
+  <header>
+    <div class="left-section">
+      <img class="dashboard-logo" src="/images/logo.png" alt="Company logo" />
+      <h2 class="dashboard-title">Recruitment Dashboard</h2>
+    </div>
+    <div class="right-section">
       <nav>
-        <a href="#">Home</a>
-        <a href="pages/tech_blog.html"> Tech Blog </a>
-        <a href="#">Settings</a>
+        <ul>
+          <a href="#home">Home</a>
+          <a href="/pages/tech_blog.html">Tech Blog</a>
+          <a href="#metrics">Metrics</a>
+          <a href="#settings">Settings</a>
+        </ul>
       </nav>
-      <form class="search-box">
-        <input type="text" placeholder="Search in site" />
+
+      <form class="search-bar">
+        <input type="search" class="search-box" placeholder="Search in site" />
         <button type="submit">
-          <img src="images/search.svg" alt="Search" />
+          <i class="fa fa-search"></i>
         </button>
       </form>
-    </header>
+    </div>
+  </header>
 
+  <body id="home">
     <main>
-      <section class="container">
+      <section class="hero-section">
         <h1>Recruitment Performance Overview</h1>
         <p>Evaluate and optimize your recruitment strategies</p>
-        <button class="button">Export Data</button>
-        <button class="button">Apply Filters</button>
+        <div>
+          <button class="export-button">Export Data</button>
+          <button class="apply-button">Apply Filters</button>
+        </div>
       </section>
 
-      <section class="metrics">
+      <section class="key-metrics" id="metrics">
         <h1>Key Metrics</h1>
 
         <div class="metrics-container">
-          <article class="metric">
-            <img src="images/line-chart.png" alt="Line Chart" />
-            <p>Recruitment Duration</p>
-            <h3>Line Chart</h3>
+          <article class="chart-container">
+            <div class="chart-header"></div>
+            <div class="chart-content">
+              <p>Recruitment Duration</p>
+              <h2>Line Chart</h2>
+            </div>
           </article>
 
-          <article class="metric">
-            <img src="images/Bar-Chart-Vertical.png" alt="Bar Chart" />
-            <p>New Hire Performance</p>
-            <h3>Bar Chart</h3>
+          <article class="chart-container">
+            <div class="chart-header2"></div>
+            <div class="chart-content">
+              <p>New Hire Performance</p>
+              <h2>Bar Chart</h2>
+            </div>
           </article>
 
-          <article class="metric">
-            <img src="images/funnel-chart.png" alt="Funnel Chart" />
-            <p>Candidate Funnel</p>
-            <h3>Funnel Chart</h3>
+          <article class="chart-container">
+            <div class="chart-header3"></div>
+            <div class="chart-content">
+              <p>Candidate Funnel</p>
+              <h2>Funnel Chart</h2>
+            </div>
           </article>
 
-          <article class="metric">
-            <img src="images/pie-chart.svg" alt="Pie Chart" />
-            <p>Demographics</p>
-            <h3>Pie Chart</h3>
+          <article class="chart-container">
+            <div class="chart-header4"></div>
+            <div class="chart-content">
+              <p>Demographics</p>
+              <h2>Pie Chart</h2>
+            </div>
           </article>
 
-          <article class="metric">
-            <img src="images/barchart_ver_1.jpg" alt="Bar Chart" />
-            <p>Expense Comparison</p>
-            <h3>Bar Chart</h3>
+          <article class="chart-container">
+            <div class="chart-header5"></div>
+            <div class="chart-content">
+              <p>Expense Comparison</p>
+              <h2>Bar Chart</h2>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="source-efficiency">
-        <div class="source-list">
-          <h2>Candidate Source Efficiency</h2>
-          <p>Track and compare candidate sourcing channels</p>
+      <section class="candidate-source-efficiency">
+        <div class="left-side">
+          <h1>Candidate Source Efficiency</h1>
+          <p class="subtitle">Track and compare candidate sourcing channels</p>
 
-          <div>
-            <img src="images/job-board.jpg" alt="Job Boards" />
+          <div class="box">
+            <img
+              class="image-box"
+              src="/images/job-board.jpg"
+              alt="Line chart"
+            />
             <div>
-              <h3>Job Boards</h3>
-              <p>12,345 candidates</p>
+              <h2>Job Boards</h2>
+              <p class="number-candidates">12,345 candidates</p>
               <p>30% of total candidates</p>
-              <p>📊 🔎</p>
+              <p>📊 🔍</p>
             </div>
           </div>
 
-          <div>
-            <img src="images/social-media.jpeg" alt="Social Media" />
+          <div class="box">
+            <img
+              class="image-box"
+              src="/images/social-media.jpeg"
+              alt="Line chart"
+            />
             <div>
-              <h3>Social Media</h3>
-              <p>8,765 candidates</p>
+              <h2>Social Media</h2>
+              <p class="number-candidates">8,765 candidates</p>
               <p>22% of total candidates</p>
-              <p>📊 🔎</p>
+              <p>📊 🔍</p>
             </div>
           </div>
 
-          <div>
-            <img src="images/referrals.png" alt="Referrals" />
+          <div class="box">
+            <img
+              class="image-box"
+              src="/images/referrals.png"
+              alt="Line chart"
+            />
             <div>
-              <h3>Referrals</h3>
-              <p>6,789 candidates</p>
+              <h2>Referrals</h2>
+              <p class="number-candidates">6,789 candidates</p>
               <p>17% of total candidates</p>
-              <p>📊 🔎</p>
+              <p>📊 🔍</p>
             </div>
           </div>
 
-          <div>
-            <img src="images/agency.png" alt="Agency" />
+          <div class="box">
+            <img class="image-box" src="/images/agency.png" alt="Line chart" />
             <div>
-              <h3>Agency</h3>
-              <p>10,987 candidates</p>
+              <h2>Agency</h2>
+              <p class="number-candidates">10,987 candidates</p>
               <p>28% of total candidates</p>
-              <p>📊 🔎</p>
+              <p>📊 🔍</p>
             </div>
           </div>
         </div>
-        <img src="images/source-efficiency.png" alt="Source Efficiency Chart" />
-      </section>
 
-      <section class="cost-per-hour">
-        <h2>Cost-per-Hour</h2>
-        <p>Analyze recruitment expenses and compare costs</p>
-
-        <div class="cost-items">
-          <article class="cost-item">
-            <p>Advertising</p>
-            <h3>$50,000</h3>
-            <span>-5%</span>
-          </article>
-
-          <article class="cost-item">
-            <p>Agency Fees</p>
-            <h3>$20,000</h3>
-            <span>+10%</span>
-          </article>
-
-          <article class="cost-item">
-            <p>Recruiter Time</p>
-            <h3>500 hours</h3>
-            <span>-3%</span>
-          </article>
-        </div>
-
-        <div class="expenses-chart">
-          <h4>Expenses by Department</h4>
-          <!-- Placeholder for chart image; replace with your actual chart image path -->
-          <img
-            src="images/bar-chart.png"
-            alt="Bar chart of expenses by department"
-          />
-        </div>
+        <aside class="right-side">
+          <img class="image-aside" src="/images/candidate.webp" />
+        </aside>
       </section>
     </main>
 
-    <footer>
-      <p>© 2024 Recruitment Dashboard. All rights reserved.</p>
-      <p>Privacy Policy</p>
-      <p>Terms of Service</p>
+    <footer id="settings">
+      <div class="footer-info">
+        <p>© 2024 Recruitment Dashboard. All rights reserved.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+      </div>
     </footer>
   </body>
 </html>
