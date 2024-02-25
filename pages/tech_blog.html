@@ -10,7 +10,12 @@
     />
     <meta name="author" content="Author's name" />
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/Blog/general.css" />
+    <link rel="stylesheet" href="../styles/Blog/header.css" />
+    <link rel="stylesheet" href="../styles/Blog/hero.css" />
+    <link rel="stylesheet" href="../styles/Blog/popular-topics.css" />
+    <link rel="stylesheet" href="../styles/Blog/products.css" />
+    <link rel="stylesheet" href="../styles/Blog/footer.css" />
     <link
       rel="icon"
       href="../images/favicon.ico"
@@ -21,119 +26,171 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div>
-        <img src="../images/logo.png" alt="logo Blog" />
-        <h2>Tech Blog</h2>
+      <div class="left-section">
+        <img class="dashboard-logo" src="/images/logo.png" alt="Company logo" />
+        <h2 class="dashboard-title">Tech Blog</h2>
       </div>
-      <div>
+      <div class="right-section">
         <nav>
-          <a href="#latest-news">Latest News</a>
-          <a href="../index.html">Dashboard</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#guides">How-To-Guides</a>
-          <a href="#interviews">Interviews</a>
-          <a href="#about">About</a>
+          <ul>
+            <a href="#home">Latest News</a>
+            <a href="../index.html">Recruitment Dashboard</a>
+            <a href="#featured">Featured Products</a>
+            <a href="#popular">Popular Topics</a>
+            <a href="#about">About</a>
+          </ul>
         </nav>
-        <form class="search-box">
-          <input type="text" placeholder="Search in site" />
+
+        <form class="search-bar">
+          <input
+            type="search"
+            class="search-box"
+            placeholder="Search in site"
+          />
           <button type="submit">
-            <img src="../images/search.svg" alt="Search" />
+            <i class="fa fa-search"></i>
           </button>
         </form>
       </div>
     </header>
 
     <main>
-      <section>
-        <div class="left-section">
-          <h1>Welcome to Tech Blog!</h1>
-          <p>
-            Stay up to date with the latest tech trends and breackthroughs
+      <section class="hero-section" id="home">
+        <div class="left-section-hero">
+          <h1 class="hero-title">Welcome to Tech Blog!</h1>
+          <p class="hero-description">
+            Stay up-to-date with the latest tech trends and breakthrough
             innovations.
           </p>
           <div>
-            <button class="button">Learn More</button>
-            <button class="button">Subscribe</button>
+            <button class="hero-button-white">Learn More</button>
+            <button class="hero-button-black">Subscribe</button>
           </div>
         </div>
-        <img src="../images/tech.png" alt="Tech Blog" />
-      </section>
 
-      <section id="latest-news">
-        <h1>Latest Articles</h1>
-        <aside>
-          <article class="article-container">
-            <img src="../images/article1.jpg" alt="Article 1" />
-            <div>
-              <h2>Cuttin-Edge Gadgets</h2>
-              <p>
-                Explore the hottest gadgets shaping the future of technology.
-              </p>
-              <p>🔍 📰</p>
-            </div>
-          </article>
-
-          <article class="article-container" id="reviews">
-            <img src="../images/article2.png" alt="Article 2" />
-            <div>
-              <h2>In-Depth Software Reviews</h2>
-              <p>Discover detailed reviews of the latest software products.</p>
-              <p>🔍 📰</p>
-            </div>
-          </article>
+        <aside class="right-section-hero">
+          <img src="/images/tech.png" />
         </aside>
       </section>
 
-      <section>
+      <section class="products-section" id="featured">
         <h1>Featured Products</h1>
-        <p>Check out these recommended tech products:</p>
-        <div>
-          <article class="product-container">
-            <figure>
-              <img src="../images/product1.jpg" alt="Product 1" />
-              <figcaption>Product 1 details</figcaption>
-            </figure>
-            <h1>Product Details</h1>
-            <p>💰 🌟</p>
+        <p class="subtitle-products">
+          Check out these recommended tech products:
+        </p>
+
+        <div class="product-rows">
+          <article class="product-card">
+            <div class="product-image">
+              <!-- You can place an image here using an img tag -->
+              <img src="/images/product1.jpg" alt="Product Image" />
+            </div>
+
+            <div class="product-info">
+              <p>Product 1</p>
+              <h2>Apple Vision Pro</h2>
+              <span class="price-icon">💰</span>
+              <span class="sparkle-icon">🌟</span>
+            </div>
           </article>
-          <article class="product-container">
-            <figure>
-              <img src="../images/product2.webp" alt="Product 2" />
-              <figcaption>Product 2 details</figcaption>
-            </figure>
-            <h1>Product Details</h1>
-            <p>💰 🌟</p>
+
+          <article class="product-card">
+            <div class="product-image">
+              <!-- You can place an image here using an img tag -->
+              <img src="/images/product2.webp" alt="Product Image" />
+            </div>
+
+            <div class="product-info">
+              <p>Product 2</p>
+              <h2>Neuralink</h2>
+              <span class="price-icon">💰</span>
+              <span class="sparkle-icon">🌟</span>
+            </div>
           </article>
-          <article class="product-container">
-            <figure>
-              <img src="../images/product3.jpg" alt="Product 3" />
-              <figcaption>Product 3 details</figcaption>
-            </figure>
-            <h1>Product Details</h1>
-            <p>💰 🌟</p>
+
+          <article class="product-card">
+            <div class="product-image">
+              <!-- You can place an image here using an img tag -->
+              <img src="/images/product3.jpg" alt="Product Image" />
+            </div>
+
+            <div class="product-info">
+              <p>Product 3</p>
+              <h2>Neo QLED 8k</h2>
+              <span class="price-icon">💰</span>
+              <span class="sparkle-icon">🌟</span>
+            </div>
           </article>
-          <article class="product-container">
-            <figure>
-              <img src="../images/product4.jpg" alt="Product 4" />
-              <figcaption>Product 4 details</figcaption>
-            </figure>
-            <h1>Product Details</h1>
-            <p>💰 🌟</p>
+
+          <article class="product-card">
+            <div class="product-image">
+              <!-- You can place an image here using an img tag -->
+              <img src="/images/product4.jpg" alt="Product Image" />
+            </div>
+
+            <div class="product-info">
+              <p>Product 4</p>
+              <h2>Apple iPhone 15</h2>
+              <span class="price-icon">💰</span>
+              <span class="sparkle-icon">🌟</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="popular-topics" id="popular">
+        <h1>Popular Topics</h1>
+        <p>Explore a wide range of tech-related topics:</p>
+        <div class="row">
+          <article class="topic-card">
+            <div class="image-container">
+              <img src="/images/ai.png" alt="AI" />
+            </div>
+
+            <h2>Artificial Intelligence</h2>
+            <p>AI in everyday life</p>
+          </article>
+          <article class="topic-card">
+            <div class="image-container">
+              <img class="phone-image" src="/images/phone.png" alt="AI" />
+            </div>
+            <h2>Mobile Technology</h2>
+            <p>The latest smartphones and apps</p>
+          </article>
+          <article class="topic-card">
+            <div class="image-container">
+              <img class="monitor-image" src="/images/monitor.png" alt="AI" />
+            </div>
+            <h2>Web Development</h2>
+            <p>Trends in web design and coding</p>
+          </article>
+          <article class="topic-card">
+            <div class="image-container">
+              <img class="camera-image" src="/images/camera.png" alt="AI" />
+            </div>
+            <h2>Photography</h2>
+            <p>Camera gear and techniques</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer id="about">
-      <small>&copy; 2022 Tech Blog. All rights reserved.</small>
-      <nav>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact Us</a>
-      </nav>
+      <div class="footer-info">
+        <p>© 2022 Tech Blog. All rights reserved.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+        <p>Contact Us</p>
+      </div>
     </footer>
   </body>
 </html>

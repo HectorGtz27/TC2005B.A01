@@ -1,0 +1,26 @@
+/*General Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 80px; /* Add top padding to the body that equals the header height */
+  font-family: Roboto, sans-serif;
+}
+
+/* Reset some default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Or if you have a main content container, add the padding there */
+.main-content {
+  padding-top: 80px; /* Add top padding to the main content container */
+}
