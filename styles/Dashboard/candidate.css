@@ -100,8 +100,15 @@
     padding: 20px;
   }
 
-  .title-candidate {
+  .left-side h1 {
     text-align: center;
-    color: red;
+  }
+
+  .left-side p {
+    text-align: center;
+  }
+
+  .left-side h2 {
+    text-align: center;
   }
 }
