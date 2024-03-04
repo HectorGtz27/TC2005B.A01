@@ -121,3 +121,19 @@ header {
   font-size: 1rem; /* Adjust icon size as needed */
   color: gray;
 }
+
+@media (max-width: 560px) {
+  .dashboard-title {
+    display: none;
+  }
+
+  .sections-container {
+    flex-direction: column;
+    margin-left: -140px;
+    text-align: center;
+  }
+
+  .search-bar {
+    display: none;
+  }
+}
