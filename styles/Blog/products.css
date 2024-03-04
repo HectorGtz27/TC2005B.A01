@@ -62,3 +62,22 @@
 .sparkle-icon {
   font-size: 24px;
 }
+
+@media (max-width: 1200px) {
+  .products-section {
+    padding: 20px 0;
+  }
+
+  .products-section h1 {
+    font-size: 36px;
+  }
+
+  .product-rows {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    margin-bottom: 20px;
+  }
+}
